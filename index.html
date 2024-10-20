@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pendidikan">Pendidikan</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to My Website</h2>
+            <p>Selamat datang di Portofolio saya. Saya merupakan Siswa Kelas 11 RPL 4, di SMK TI Bali Global Denpasar</p>
+        </div>
+    </section>
+
+    <section id="profile">
+        <img src="img/foto.jpg" alt="My Photo" class="profile-photo">
+        <div class="container">
+            <h2>Profile</h2>
+            <p>Nama: Made Hartanadi Darmaja</p>
+            <p>Kelas: 11 RPL 4, SMK TI Bali Global Denpasar</p>
+            <p>Saya adalah seorang siswa yang bersemangat dalam bidang Rekayasa Perangkat Lunak, khususnya pengembangan web dan pemrograman.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <p>Saya Made Hartanadi Darmaja, seorang siswa Kelas 11 RPL 4 di SMK TI Bali Global Denpasar. Saya memiliki ketertarikan yang besar dalam bidang Rekayasa Perangkat Lunak, khususnya dalam pengembangan web dan pemrograman. Saya senang mempelajari teknologi baru dan selalu mencari cara untuk mengasah kemampuan saya dalam membuat aplikasi dan website yang bermanfaat.</p>
+            <p>Selain di bidang akademis, saya juga memiliki minat dalam bidang musik, khususnya bermain gitar. Musik membantu saya mengekspresikan kreativitas dan memberikan keseimbangan antara dunia teknologi dan seni.</p>
+            <p>Saya selalu percaya bahwa pendidikan yang baik adalah fondasi dari kesuksesan, dan saya berusaha untuk terus berkembang, baik di bidang akademis maupun dalam hobi yang saya geluti.</p>
+        </div>
+    </section>
+    
+    
+
+    <section id="pendidikan">
+        <div class="container">
+            <h2>Pendidikan</h2>
+            <div class="pendidikan-item" onclick="openModal('Tk Swastika', 'Tk Swastika adalah tempat pendidikan anak usia dini yang berfokus pada pengembangan karakter.')">
+                <h3>Tk Swastika</h3>
+                <img src="img/tk.jpg" alt="Tk Swastika">
+            </div>
+            <div class="pendidikan-item" onclick="openModal('SDN 10 Pemecutan', 'SD NEGERI 10 PEMECUTAN beralamat di Jln. Imam Bonjol Denpasar, PEMECUTAN, Kec. Denpasar Barat, Kota Denpasar, Bali. SDN 10 Pemecutan adalah sekolah dasar yang berkomitmen untuk memberikan pendidikan berkualitas.')">
+                <h3>SDN 10 Pemecutan</h3>
+                <img src="img/sd.jpg" alt="SDN 10 Pemecutan">
+            </div>
+            <div class="pendidikan-item" onclick="openModal('SMP PGRI 5 Denpasar', 'SMP PGRI 5 Denpasar (Akreditasi A) Merupakan sekolah Swasta Memiliki tiga Gedung dengan fasilitas lekap, Lab.Komputer, serta media pendukung pembelajaran lainnya. SMP PGRI 5 Denpasar  banyak menorehkan prestasi dalam bidang akademik maupun non akademik')">
+                <h3>SMP PGRI 5 Denpasar</h3>
+                <img src="img/smpp.jpeg" alt="SMP PGRI 5 Denpasar">
+            </div>
+            <div class="pendidikan-item" onclick="openModal('SMK TI Bali Global Denpasar', 'SMK TI Bali Global Denpasar adalah sekolah menengah kejuruan yang berfokus pada teknologi informasi. SMK TI Bali Global Denpasar merupakan SMK TI swasta terbaik di Bali. SMK TI Bali Global Denpasar berlokasi di Jl. Tukad Citarum No. 44 Denpasar.')">
+                <h3>SMK TI Bali Global Denpasar</h3>
+                <img src="img/smk.jpg" alt="SMK TI Bali Global Denpasar">
+            </div>
+            <!-- Modal untuk penjelasan tentang sekolah -->
+            <div id="schoolModal" class="modal">
+                  <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2 id="schoolTitle">Judul Sekolah</h2>
+                 <p id="schoolDescription">Deskripsi tentang sekolah akan ditampilkan di sini.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+    <section id="project">
+        <h3>My Projects</h3>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="project-card">
+                    <img src="img/project1.png" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Project 1</h3>
+                        <p>Di project pertama, saya belajar membuat web galeri kapal laut dari negara Inggris.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/project2.png" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Project 2</h3>
+                        <p>Untuk di project kedua, saya belajar membuat website review film.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/project3.png" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Project 3</h3>
+                        <p>Di project ketiga, saya belajar membuat website biografi seorang guru.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/project4.png" alt="Project 4">
+                    <div class="project-info">
+                        <h3>Project 4</h3>
+                        <p>Project ini saya belajar untuk membuat program kasir sederhana menggunakan C++</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/project5.png" alt="Project 5">
+                    <div class="project-info">
+                        <h3>Project 5</h3>
+                        <p>Di project kelima, saya membuat aplikasi game untuk berhitung dan mencocokan gamabar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Hubungi Saya</h2>
+            <p>Silakan hubungi saya melalui:</p>
+            <div class="contact-links">
+                <a href="mailto:madehartanadi@gmail.com" class="contact-item">
+                    <img src="img/gmail.png" alt="Ikon Email" class="contact-icon">
+                    <span>Email: madehartanadi@gmail.com</span>
+                </a>
+                <a href="https://www.instagram.com/harta.24/profilecard/?igsh=MXRyZGlvcTI1NnFxYw==" class="contact-item" target="_blank">
+                    <img src="img/instagram.png" alt="Ikon Instagram" class="contact-icon">
+                    <span>Instagram: @harta.24</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    background-color: #ff6347;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+/* Profile Section */
+#profile {
+    background-color: #ffffff; /* Putih */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+    max-width: 800px; /* Lebar maksimum */
+    margin: 40px auto; /* Margin atas-bawah */
+}
+
+#profile h2 {
+    font-size: 2.5rem;
+    color: #008080; /* Warna Teal untuk judul */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Mengubah menjadi huruf kapital */
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Membuat foto menjadi bulat */
+    border: 4px solid #008080; /* Border berwarna teal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+    margin-bottom: 20px; /* Margin bawah */
+}
+
+#profile p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Gaya tambahan untuk tampilan responsif */
+@media (max-width: 768px) {
+    #profile h2 {
+        font-size: 2rem; /* Ukuran font lebih kecil di layar kecil */
+    }
+    #profile p {
+        font-size: 1rem; /* Ukuran font lebih kecil di layar kecil */
+    }
+}
+
+
+/* Bagian About */
+#about {
+    background-color: #ffffff; /* Putih */
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+    max-width: 800px; /* Lebar maksimum */
+    margin: 40px auto; /* Margin atas-bawah */
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #008080; /* Teal untuk judul */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Mengubah menjadi huruf kapital */
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify; /* Rata kanan-kiri */
+    padding: 0 20px; /* Ruang di kiri-kanan */
+}
+
+/* Gaya tambahan untuk tampilan responsif */
+@media (max-width: 768px) {
+    #about h2 {
+        font-size: 2rem; /* Ukuran font lebih kecil di layar kecil */
+    }
+    #about p {
+        font-size: 1rem; /* Ukuran font lebih kecil di layar kecil */
+    }
+}
+
+
+
+/* Pendidikan Section */
+#pendidikan {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#pendidikan h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.pendidikan-item {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pendidikan-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.pendidikan-item:hover {
+    transform: translateY(-10px);
+}
+
+.pendidikan-item:hover img {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+.pendidikan-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.pendidikan-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Tersembunyi secara default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Latar belakang hitam */
+    background-color: rgba(0,0,0,0.4); /* Transparansi */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Lebar modal */
+    max-width: 600px; /* Lebar maksimum */
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Project Section */
+#project {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#project h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.project-card {
+    min-width: 33.33%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-card img {
+    max-width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-info {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Bagian Contact */
+#contact {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    transition: filter 0.3s;
+}
+
+.contact-item:hover .contact-icon {
+    filter: brightness(1.2);
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .project-card {
+        min-width: 100%;
+    }
+}
